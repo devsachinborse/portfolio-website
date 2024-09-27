@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.css">
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-900 max-w-screen-lg mx-auto">
+
+  <!-- Navbar -->
+  <nav class="text-white">
+    <div class="container flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold text-purple-500">Sachin Borse</div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-purple-500">Home</a></li>
+        <li><a href="projects.html" class="hover:text-purple-500">Projects</a></li>
+        <li><a href="blogs.html" class="hover:text-purple-500">Blog</a></li>
+        <li><a href="/" class="hover:text-purple-500">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Blog Section -->
+  <section class="py-20 ">
+    <div class="container max-w-screen-xl mx-auto">
+      <h2 class="text-4xl font-bold text-purple-600 text-center">Blog</h2>
+
+      <!-- Categories -->
+      <div class="mt-8 text-center space-x-4 flex flex-wrap justify-center items-center gap-2 m-6">
+        <button class="filter-btn px-4 py-2 bg-purple-600 text-white rounded-lg" data-category="all">All</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="Golang">Golang</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="Rust">Rust</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="Python">Python</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="Blockchain">Blockchain</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="CICD">CI/CD</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="RestAPI">REST API</button>
+        <button class="filter-btn px-4 py-2 bg-gray-700 text-white rounded-lg" data-category="Solidity">Solidity</button>
+      </div>
+
+      <!-- Blog Posts -->
+      <div class="mt-8 space-y-6 m-6">
+        
+        <!-- Blog Post: Golang -->
+        <div class="blog-post Golang flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+          <img src="images/goCreateblog.png" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+          <div class="flex-grow">
+            <h3 class="text-2xl font-semibold ">🚀 Announcing goCreate: Your New Go-To Open Source CLI Tool for Go Project Scaffolding 🎉</h3>
+            <p class="mt-2 text-gray-600 truncate-multiline">I am excited to introduce goCreate, my first-ever open-source CLI tool (pre-Launch) designed to automate the process of generating Go project structures with a variety of architectural patterns. As a developer who values efficiency, I created #goCreate to eliminate the repetitive task of setting up new Go projects manually—allowing you to focus on writing code, not structuring files.</p>
+            <a href="https://sachinborse.hashnode.dev/gocreate-cli-tool-for-go-project-scaffolding" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+          </div>
+        </div>
+
+        <div class="blog-post Rust flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/rustun.avif" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Easy Guide to Creating a Web Server with Rust and Actix Web</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Rust has gained popularity in recent years for its performance, safety, and expressiveness. Actix Web, a lightweight and powerful web framework, makes it easy to build web servers and web applications in Rust. In this article, we'll walk through the process of creating a simple web server using Actix Web.</p>
+              <a href="https://sachinborse.hashnode.dev/easy-guide-to-creating-a-web-server-with-rust-and-actix-web" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+
+        <div class="blog-post Golang flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/validating.png" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Validating Struct Fields in Go: With and Without Packages</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Validation is essential for ensuring that the data in your application meets specific criteria. Go offers multiple ways to validate struct fields—both with the help of external packages and through custom-built validation logic. In this article, we'll explore both methods, including how to provide custom error messages in validation tags.</p>
+              <a href="https://sachinborse.hashnode.dev/validating-struct-fields-in-go-with-and-without-packages" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+
+          <div class="blog-post Golang flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/http.png" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Exploring Lesser-Known HTTP Handlers in Go</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">When working with Go’s net/http package, most of us are familiar with the basics: http.HandleFunc for routing, http.ServeMux for handling multiple routes, and http.FileServer for serving static files. But Go’s HTTP package has a few lesser-known handlers and functions that can be incredibly useful for more specific needs. Let’s dive into these often-overlooked features and see how they can make your life easier.</p>
+              <a href="https://sachinborse.hashnode.dev/exploring-lesser-known-http-handlers-in-go" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+
+
+          <div class="blog-post Golang flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/package.png" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">How to Create and Publish Your Own Go Package</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Have you ever wanted to create and publish your own Go package? Whether it’s to share your code with others or to reuse it across projects, publishing a package in Go is simple and can be a great learning experience. In this article, I'll walk you through creating a basic package in Go, publishing it on GitHub, and using it in another project.</p>
+              <a href="https://sachinborse.hashnode.dev/publish-your-own-go-package" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+          <div class="blog-post CICD flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/jenkins.avif" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">How to install Jenkins on linux</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Jenkins is an open-source automation server widely used for continuous integration (CI) and continuous delivery (CD) processes in software development. It helps developers automate the building, testing, and deployment of applications, making it easier to deliver high-quality software quickly and efficiently.</p>
+              <a href="https://sachinborse.hashnode.dev/how-to-install-jenkins-on-linux" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+
+          <div class="blog-post Golang flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/package.png" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Building a Go Server with SOLID Principles: A Simple Guide</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Ever wondered how to craft a clean, maintainable server in Go? You're not alone! In this article, I'll walk you through building a Go server while adhering to SOLID principles. By the end of this journey, you'll understand how to create a robust, scalable application that’s easy to extend and maintain. Ready? Let’s dive in!</p>
+              <a href="https://sachinborse.hashnode.dev/building-a-go-server-with-solid-principles-a-simple-guide" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+        <!-- Blog Post: Rust -->
+
+        <div class="blog-post Rust flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/rustun.avif" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Avoiding unwrap() in Production Code: A Guide to Writing Robust Rust Applications</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">In the vast world of Rust programming, where safety and reliability are super important, there's a tricky function called unwrap(). It might seem like a handy tool at first, but it can actually be a bit dangerous, especially in serious situations like when your app is live.!</p>
+              <a href="https://sachinborse.hashnode.dev/avoiding-unwrap-in-production-code-a-guide-to-writing-robust-rust-applications" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+
+          <div class="blog-post Rust flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/rustun.avif" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Easy Guide to Creating a Web Server with Rust and Actix Web</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Rust has gained popularity in recent years for its performance, safety, and expressiveness. Actix Web, a lightweight and powerful web framework, makes it easy to build web servers and web applications in Rust. In this article, we'll walk through the process of creating a simple web server using Actix Web.</p>
+              <a href="https://sachinborse.hashnode.dev/easy-guide-to-creating-a-web-server-with-rust-and-actix-web" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+
+          <div class="blog-post Rust flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-4">
+            <img src="images/ruststruct.avif" alt="goCreate" class="w-24 h-24 object-cover rounded-md mr-6 mb-4 md:mb-0">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-semibold ">Ways to Access Struct Data in Rust: A Comprehensive Guide 🦀</h3>
+              <p class="mt-2 text-gray-600 truncate-multiline">Rust is renowned for its powerful and expressive type system, and one of the fundamental data structures it provides is the struct. Structs allow you to define custom types with named fields, providing a way to organize related data. In this article, we'll delve into various techniques for accessing data within Rust structs.</p>
+              <a href="https://sachinborse.hashnode.dev/ways-to-access-struct-data-in-rust-a-comprehensive-guide" target="_blank" class="block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-36 text-center">View More</a>
+            </div>
+          </div>
+      
+
+        <!-- Add more blog posts for other categories as needed -->
+      
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript for Filtering -->
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const blogPosts = document.querySelectorAll('.blog-post');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.getAttribute('data-category');
+        
+        // Update button styles
+        filterBtns.forEach(b => b.classList.replace('bg-purple-600', 'bg-gray-700'));
+        btn.classList.replace('bg-gray-700', 'bg-purple-600');
+
+        // Filter blog posts
+        blogPosts.forEach(post => {
+          if (category === 'all' || post.classList.contains(category)) {
+            post.classList.remove('hidden');
+          } else {
+            post.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

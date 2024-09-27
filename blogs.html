@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="tailwind.css">
   <style>
     .hidden { display: none; }
+    .truncate-multiline {
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Limit to 3 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-gray-900 max-w-screen-lg mx-auto">

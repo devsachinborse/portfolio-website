@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/tailwind.css">
+  <style>
+    .truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  </style>
 </head>
 <body class="bg-gray-900 text-gray-900 max-w-screen-lg mx-auto">
 
